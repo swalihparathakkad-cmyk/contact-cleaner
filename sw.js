@@ -1,9 +1,11 @@
-const CACHE = 'contact-cleaner-v1';
+const CACHE = 'contact-cleaner-v2';
 const ASSETS = [
-  './index.html',
-  './manifest.json',
-  'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js',
-  'https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap'
+  '/contact-cleaner/',
+  '/contact-cleaner/index.html',
+  '/contact-cleaner/manifest.json',
+  '/contact-cleaner/icon-192.png',
+  '/contact-cleaner/icon-512.png',
+  'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'
 ];
 
 self.addEventListener('install', e => {
@@ -24,6 +26,6 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('./index.html')))
+    caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('/contact-cleaner/index.html')))
   );
 });
