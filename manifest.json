@@ -1,0 +1,24 @@
+{
+  "name": "Contact Cleaner",
+  "short_name": "Cleaner",
+  "description": "Clean your contact list easily",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d0d14",
+  "theme_color": "#7c6ef5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
